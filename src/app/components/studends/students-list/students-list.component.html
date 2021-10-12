@@ -1,0 +1,36 @@
+<div class="container">
+  <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Class</th>
+          <th scope="col">Mark</th>
+          <th scope="col">Gender</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let std of studentData">
+          <td>{{std.id}}</td>
+          <td>{{std.name}}</td>
+          <td>{{std.class}}</td>
+          <td>{{std.mark}}</td>
+          <td>{{std.gender}}</td>
+          <td>
+            <div class="btn-small">
+              <button class="btn btn-danger" (click)="onUpdate()">
+                  <span class="fa fa-edit"></span>
+              </button>
+          </div>
+          </td>
+          <td>
+            <div class="btn-small">
+              <button class="btn btn-danger" (click)="onDelete(std)">
+                  <span class="fa fa-trash-o"></span>
+              </button>
+          </div>
+          </td>
+        </tr>
+      </tbody>
+  </table>
+</div>

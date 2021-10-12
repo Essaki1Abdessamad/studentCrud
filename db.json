@@ -1,0 +1,32 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Essaki Abdessamad",
+      "class": "Five",
+      "mark": 15,
+      "gender": "male"
+    },
+    {
+      "id": 2,
+      "name": "El achqar Mehdi",
+      "class": "Four",
+      "mark": 16,
+      "gender": "male"
+    },
+    {
+      "id": 3,
+      "name": "Elarfani Houd",
+      "class": "Four",
+      "mark": 13,
+      "gender": "female"
+    },
+    {
+      "id": 4,
+      "name": "Hemza Werdani",
+      "class": "Six",
+      "mark": 12,
+      "gender": "male"
+    }
+  ]
+}
