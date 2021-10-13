@@ -11,6 +11,7 @@ import { StudentsNavBarComponent } from './components/studends/students-nav-bar/
 import { StudentsListComponent } from './components/studends/students-list/students-list.component';
 import { StudentsAddComponent } from './components/students-add/students-add.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { StudentsEditComponent } from './components/students-edit/students-edit.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     StudentsNavBarComponent,
     StudentsListComponent,
-    StudentsAddComponent
+    StudentsAddComponent,
+    StudentsEditComponent
   ],
   imports: [
     BrowserModule,

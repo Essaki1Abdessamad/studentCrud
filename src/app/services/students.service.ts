@@ -17,6 +17,13 @@ export class StudentsService {
     }))
   }
 
+  getStudent(id : number) {
+    return this.http.get<Student>("http://localhost:3000/students/"+id)
+    .pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+
   postStudent(student : Student) {
     return this.http.post<Student[]>("http://localhost:3000/students",student)
     .pipe(map((res:any)=>{
@@ -26,6 +33,13 @@ export class StudentsService {
 
   deleteStudent(id : Number) {
     return this.http.delete<Student[]>("http://localhost:3000/students/"+id)
+    .pipe(map((res:any)=>{
+      return res;
+    }))
+  }
+
+  updateStudent(student : Student) {
+    return this.http.put<Student[]>("http://localhost:3000/students/"+student.id,student)
     .pipe(map((res:any)=>{
       return res;
     }))

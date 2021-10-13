@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Student } from 'src/app/model/student.model';
 import {StudentsService} from '../../../services/students.service'
 
@@ -13,7 +14,7 @@ export class StudentsListComponent implements OnInit {
 
   studentData !: any;
 
-  constructor(private studentsAPI : StudentsService) {
+  constructor(private studentsAPI : StudentsService, private router : Router) {
     this.getAllEmployee()
    }
 
@@ -35,6 +36,8 @@ export class StudentsListComponent implements OnInit {
     })
   }
 
-  onUpdate(){}
+  onUpdate(student : Student){
+    this.router.navigateByUrl("/editStudents/"+student.id)
+  }
 
 }

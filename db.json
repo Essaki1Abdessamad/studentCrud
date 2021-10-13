@@ -11,19 +11,19 @@
       "id": 2,
       "name": "El achqar Mehdi",
       "class": "Four",
-      "mark": 16,
+      "mark": "20",
       "gender": "male"
     },
     {
       "id": 3,
-      "name": "Elarfani Houd",
+      "name": "Elarfani Houda",
       "class": "Four",
       "mark": 13,
       "gender": "female"
     },
     {
       "id": 4,
-      "name": "Hemza Werdani",
+      "name": "Hemza Werdani up",
       "class": "Six",
       "mark": 12,
       "gender": "male"
